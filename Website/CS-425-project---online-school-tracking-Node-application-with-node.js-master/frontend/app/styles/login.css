@@ -1,0 +1,79 @@
+.login-main {
+  background-image: url('/assets/images/login-background.jpg');
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+}
+.form-control-inline {
+    min-width: 0;
+    width: 320px !important;
+    display: inline !important;
+}
+.login-btn {
+  border: none;
+  background-color:#DD853E;
+  border-radius: 25px;
+  padding: 10px 55px 10px 55px;
+  color:white;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+.login-btn:hover {
+  background-color: #c67737;
+}
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .l-container {
+    padding-top: 100px;
+    padding-bottom:100px;
+    border-radius: 5px;
+    width:400px;
+    height:500px;
+    left:50%;
+    top:50%;
+    margin-left:-200px;
+    margin-top: -250px;
+    position: absolute;
+  }
+  .password {
+    padding-bottom:25px;
+  }
+  .username {
+    padding-bottom:20px;
+  }
+  .welcome {
+    padding-bottom: 20px;
+  }
+  .submit {
+    padding-bottom: 50px;
+  }
+  .forgot-pass {
+    margin-top:20px;
+  }
+  .welcome-text {
+    font-size: 20px;
+  }
+}

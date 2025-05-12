@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="confirm-delete color-white">
+    <span class="ask">Are you sure you wish to delete this Parent?</span>
+    <br>
+    <div class="center">
+      <button type="button" name="button" {{action 'deleteModel' param=id}} class="btn-yes">Yes</button>
+      <button type="button" name="button" {{action 'cancelDeleteModel'}} class="btn-no">No</button>
+    </div>
+  </div>
+  <div class="notification-delete">
+    <span>{{inline-svg "checkmark.svg" class='checkmark'}} Parents successfully deleted! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cancel-notification">x</span></span>
+  </div>
+  {{general-table model=model column1="Mother" column2="Father" column3="Students" confirmDelete='confirmDelete' editParent='editParent' param=id isParent=isParent}}
+</div>
+
+{{outlet}}

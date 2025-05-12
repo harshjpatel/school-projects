@@ -1,0 +1,65 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #f7f8fc, #e3e6f1);
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #0066ff;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #004bb5;
+    transform: scale(1.02);
+}
+
+a.text-primary:hover {
+    color: #004bb5;
+    text-decoration: underline;
+}
+
+.welcome-message {
+    background: linear-gradient(90deg, #4CAF50, #008CBA); /* Gradient background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 15px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the message */
+    font-family: 'Arial', sans-serif; /* Nice font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.welcome-message h4 {
+    font-size: 20px; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+}
+
+.employee-panel {
+    background: linear-gradient(90deg, #6a5acd, #4169e1); /* Purple to blue gradient */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Padding for height */
+    width: 100%; /* Full width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+}
+
+.employee-panel h1 {
+    font-size: 28px; /* Larger font size for emphasis */
+    margin: 0; /* Remove default margin */
+}
+
+.nav {
+    margin-top: 20px; /* Space between the panel and navigation */
+}

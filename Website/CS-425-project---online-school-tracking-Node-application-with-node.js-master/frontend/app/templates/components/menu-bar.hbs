@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li>
+        <div {{action "expandMenu"}}>
+          {{inline-svg "hamburger.svg" class="hamburger"}}
+        </div>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <div {{action "logOut"}}>
+          {{inline-svg "power.svg" class="power"}}
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+{{yield}}

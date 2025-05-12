@@ -1,0 +1,462 @@
+<div class="container t-container-fluid color-white {{if isTable1 'table1'}} {{if isTable2 'table2'}} {{if isTable3 'table3'}}">
+  <!-- <div class="row"> -->
+    <table class="table">
+      <thead>
+        <tr>
+          {{#if isAdmin}}
+            {{#if column1}}
+            <th class="col-lg-5">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-5">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}}
+          {{/if}}
+
+          {{#if isBook}}
+            {{#if column1}}
+            <th class="col-lg-2">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-2">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}}
+            {{#if column4}}
+            <th class="col-lg-1">{{column4}}</th>
+            {{/if}}
+            {{#if column5}}
+            <th class="col-lg-1">{{column5}}</th>
+            {{/if}}
+            {{#if column6}}
+            <th class="col-lg-2">{{column6}}</th>
+            {{/if}}
+            {{#if column7}}
+            <th class="col-lg-1">{{column7}}</th>
+            {{/if}}
+            {{#if column8}}
+            <th class="col-lg-1">{{column8}}</th>
+            {{/if}}
+            <!-- {{#if column9}}
+            <th class="col-lg-1">{{column9}}</th>
+            {{/if}}
+            {{#if column10}}
+            <th class="col-lg-1">{{column10}}</th>
+            {{/if}} -->
+          {{/if}}
+
+          {{#if isBookCO}}
+            {{#if column1}}
+            <th class="col-lg-2">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-2">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}}
+            {{#if column4}}
+            <th class="col-lg-1">{{column4}}</th>
+            {{/if}}
+            {{#if column5}}
+            <th class="col-lg-1">{{column5}}</th>
+            {{/if}}
+            {{#if column6}}
+            <th class="col-lg-2">{{column6}}</th>
+            {{/if}}
+            {{#if column7}}
+            <th class="col-lg-1">{{column7}}</th>
+            {{/if}}
+            {{#if column8}}
+            <th class="col-lg-1">{{column8}}</th>
+            {{/if}}
+            <!-- {{#if column9}}
+            <th class="col-lg-1">{{column9}}</th>
+            {{/if}}
+            {{#if column10}}
+            <th class="col-lg-1">{{column10}}</th>
+            {{/if}} -->
+          {{/if}}
+
+          {{#if isStudent}}
+            {{#if column1}}
+            <th class="col-lg-1">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-2">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}}
+            {{#if column4}}
+            <th class="col-lg-2">{{column4}}</th>
+            {{/if}}
+            {{#if column5}}
+            <th class="col-lg-1">{{column5}}</th>
+            {{/if}}
+            {{#if column6}}
+            <th class="col-lg-1">{{column6}}</th>
+            {{/if}}
+            {{#if column7}}
+            <th class="col-lg-1">{{column7}}</th>
+            {{/if}}
+            {{#if column8}}
+            <th class="col-lg-1">{{column8}}</th>
+            {{/if}}
+            {{#if column9}}
+            <th class="col-lg-1">{{column9}}</th>
+            {{/if}}
+          {{/if}}
+
+          {{#if isParent}}
+            {{#if column1}}
+            <th class="col-lg-3">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-3">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-3">{{column3}}</th>
+            {{/if}}
+            {{#if column4}}
+            <th class="col-lg-3">{{column4}}</th>
+            {{/if}}
+            <!-- {{#if column5}}
+            <th class="col-lg-2">{{column5}}</th>
+            {{/if}} -->
+          {{/if}}
+
+          {{#if isTeacher}}
+            {{#if column1}}
+            <th class="col-lg-4">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-2">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}}
+            {{#if column4}}
+            <th class="col-lg-2">{{column4}}</th>
+            {{/if}}
+            {{#if column5}}
+            <th class="col-lg-2">{{column5}}</th>
+            {{/if}}
+            <!-- {{#if column6}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}} -->
+          {{/if}}
+
+          {{#if isClass}}
+            {{#if column1}}
+            <th class="col-lg-2">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-2">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}}
+            {{#if column4}}
+            <th class="col-lg-4">{{column4}}</th>
+            {{/if}}
+            {{#if column5}}
+            <th class="col-lg-2">{{column5}}</th>
+            {{/if}}
+          {{/if}}
+
+          {{#if isDepartment}}
+            {{#if column1}}
+            <th class="col-lg-2">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-2">{{column2}}</th>
+            <!-- {{/if}}
+            {{#if column3}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}}
+            {{#if column4}}
+            <th class="col-lg-2">{{column4}}</th>
+            {{/if}}
+            {{#if column5}}
+            <th class="col-lg-2">{{column5}}</th>
+            {{/if}}
+            {{#if column6}}
+            <th class="col-lg-2">{{column6}}</th>
+            {{/if}} -->
+          {{/if}}
+
+          {{#if isAdvisor}}
+            {{#if column1}}
+            <th class="col-lg-4">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-4">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}}
+            {{#if column4}}
+            <th class="col-lg-2">{{column4}}</th>
+            {{/if}}
+            <!-- {{#if column5}}
+            <th class="col-lg-2">{{column5}}</th>
+            {{/if}} -->
+          {{/if}}
+
+          {{#if isUser}}
+            {{#if column1}}
+            <th class="col-lg-2">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-2">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-2">{{column3}}</th>
+            {{/if}}
+            {{#if column4}}
+            <th class="col-lg-4">{{column4}}</th>
+            {{/if}}
+            {{#if column5}}
+            <th class="col-lg-2">{{column5}}</th>
+            {{/if}}
+          {{/if}}
+          <!--             -->
+          <!-- MAIN TABLE1 -->
+          <!--             -->
+          {{#if isTable1}}
+            {{#if column1}}
+            <th class="col-lg-4">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-4 red">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-4 green">{{column3}}</th>
+            {{/if}}
+          {{/if}}
+          <!--             -->
+          <!-- MAIN TABLE2 -->
+          <!--             -->
+          {{#if isTable2}}
+            {{#if column1}}
+            <th class="col-lg-4">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-4 blue">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-4 red">{{column3}}</th>
+            {{/if}}
+          {{/if}}
+          <!--             -->
+          <!-- MAIN TABLE3 -->
+          <!--             -->
+          {{#if isTable3}}
+            {{#if column1}}
+            <th class="col-lg-4">{{column1}}</th>
+            {{/if}}
+            {{#if column2}}
+            <th class="col-lg-4">{{column2}}</th>
+            {{/if}}
+            {{#if column3}}
+            <th class="col-lg-4 red">{{column3}}</th>
+            {{/if}}
+          {{/if}}
+        </tr>
+      </thead>
+      <tbody>
+        {{#if isTable1}}
+          <tr>
+            <td class="col-lg-4">{{model.books.length}}</td>
+            <td class="col-lg-4 red">{{model.amountFalse.length}}</td>
+            <td class="col-lg-4 green">{{model.amountTrue.length}}</td>
+          </tr>
+        {{/if}}
+        {{#if isTable2}}
+          {{#each model.books as |book|}}
+            <tr>
+            {{#unless book.is_available}}
+              <td class="col-lg-4">{{book.student.student_name}}</td>
+              <td class="col-lg-4 blue">{{book.checkout_date}}</td>
+              <td class="col-lg-4 red">{{book.due_date}}</td>
+            {{/unless}}
+            </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isTable3}}
+          {{#each model.books as |book|}}
+            <tr>
+            {{#if book.is_due}}
+              <td class="col-lg-4">{{book.student.student_name}}</td>
+              <td class="col-lg-4"><span class="blue">{{book.student.parent.mother_name}}</span>&nbsp;|&nbsp;<span class="green">{{book.student.parent.father_name}}</span></td>
+              <td class="col-lg-4 red">${{book.price}}</td>
+            {{/if}}
+            </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isAdmin}}
+          {{#each model as |admin|}}
+          <tr {{action 'editAdmin' admin.id}} class="highlight-hover">
+            <!-- <td class="col-lg-2">{{admin.id}}</td> -->
+            <td class="col-lg-5">{{admin.admin_name}}</td>
+            <td class="col-lg-5">{{admin.admin_email}}</td>
+            <td class="col-lg-2"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' admin.id bubbles=false}}>Delete</button></td>
+          </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isBook}}
+          {{#each model as |book|}}
+          <tr {{action 'editBook' book.id}} class="highlight-hover">
+            <td class="col-lg-2">{{book.book_name}}</td>
+            <td class="col-lg-2">{{book.isbn}}</td>
+            <td class="col-lg-2">{{book.author}}</td>
+            <td class="col-lg-1">${{book.price}}</td>
+            <td class="col-lg-1">{{book.is_available}}</td>
+            <td class="col-lg-2">{{book.checkout_date}}</td>
+            <td class="col-lg-1">{{book.due_date}}</td>
+            <!-- <td class="col-lg-1">{{book.student.student_name}}</td>
+            <td class="col-lg-1">{{book.teacher.teacher_name}}</td> -->
+            <td class="col-lg-1"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' book.id bubbles=false}}>Delete</button></td>
+          </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isBookCO}}
+          {{#each model as |book|}}
+            {{#unless book.is_available}}
+              <tr {{action 'editBook' book.id}} class="highlight-hover">
+                <td class="col-lg-2">{{book.book_name}}</td>
+                <td class="col-lg-2">{{book.isbn}}</td>
+                <td class="col-lg-2">{{book.author}}</td>
+                <td class="col-lg-1">${{book.price}}</td>
+                <td class="col-lg-1">{{book.is_available}}</td>
+                <td class="col-lg-2">{{book.checkout_date}}</td>
+                <td class="col-lg-1">{{book.due_date}}</td>
+                <!-- <td class="col-lg-1">{{book.student.student_name}}</td>
+                <td class="col-lg-1">{{book.teacher.teacher_name}}</td> -->
+                <td class="col-lg-1"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' book.id bubbles=false}}>Delete</button></td>
+              </tr>
+            {{/unless}}
+          {{/each}}
+        {{/if}}
+        {{#if isStudent}}
+          {{#each model as |student|}}
+          <tr {{action 'editStudent' student.id}} class="highlight-hover">
+            <td class="col-lg-1">{{student.student_ID}}</td>
+            <td class="col-lg-2">{{student.student_name}}</td>
+            <td class="col-lg-2">{{student.student_email}}</td>
+            <td class="col-lg-2">{{student.student_address}}</td>
+            <td class="col-lg-1">{{student.student_phone}}</td>
+            <td class="col-lg-1">{{student.parent.mother_name}}</td>
+            <td class="col-lg-1">{{student.department.dept_name}}</td>
+            <td class="col-lg-1">{{student.advisor.advisor_name}}</td>
+            <td class="col-lg-1"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' student.id bubbles=false}}>Delete</button></td>
+          </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isParent}}
+          {{#each model as |parent|}}
+          <tr {{action 'editParent' parent.id}} class="highlight-hover">
+            <!-- <td class="col-lg-2">{{parent.id}}</td> -->
+            <td class="col-lg-3">{{parent.mother_name}}</td>
+            <td class="col-lg-3">{{parent.father_name}}</td>
+            <!-- <td class="col-lg-4">{{parent.parent_phone}}</td> -->
+            <td class="col-lg-3 wrap">
+              {{#each parent.students as |student|}}
+                {{student.student_name}}
+                |&nbsp;
+              {{/each}}
+            </td>
+            <td class="col-lg-3"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' parent.id bubbles=false}}>Delete</button></td>
+          </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isTeacher}}
+          {{#each model as |teacher|}}
+          <tr {{action "editTeacher" teacher.id}} class="highlight-hover">
+            <td class="col-lg-4">{{teacher.teacher_name}}</td>
+            <td class="col-lg-2">{{teacher.teacher_email}}</td>
+            <td class="col-lg-2 wrap">
+              {{#each teacher.classes as |class|}}
+                {{class.class_name}}
+                |&nbsp;
+              {{/each}}
+            </td>
+            <td class="col-lg-2">{{teacher.department.dept_name}}</td>
+            <td class="col-lg-2"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' teacher.id bubbles=false}}>Delete</button></td>
+          </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isClass}}
+          {{#each model as |class|}}
+          <tr {{action "editClass" class.id}} class="highlight-hover">
+            <!-- <td class="col-lg-2">{{class.id}}</td> -->
+            <td class="col-lg-2">{{class.class_name}}</td>
+            <td class="col-lg-2">{{class.department.dept_name}}</td>
+            <td class="col-lg-2">{{class.teacher.teacher_name}}</td>
+            <td class="col-lg-4 wrap">
+              {{#each class.students as |student|}}
+                {{student.student_name}}
+                  |&nbsp;
+              {{/each}}
+            </td>
+            <td class="col-lg-2"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' class.id bubbles=false}}>Delete</button></td>
+          </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isDepartment}}
+          {{#each model as |department|}}
+          <tr {{action 'editDepartment' department.id}} class="highlight-hover">
+            <!-- <td class="col-lg-4">{{department.id}}</td> -->
+            <td class="col-lg-2">{{department.dept_name}}</td>
+            <!-- {{#each department.teachers as |teacher|}}
+              <td class="col-lg-2">{{teacher.teacher_name}}</td>
+            {{/each}}
+            {{#each department.students as |student|}}
+            <td class="col-lg-2">{{student.student_name}}</td>
+            {{/each}}
+            {{#each department.advisors as |advisor|}}
+            <td class="col-lg-2">{{advisor.advisor_name}}</td>
+            {{/each}}
+            {{#each department.classes as |class|}}
+            <td class="col-lg-2">{{class.class_name}}</td>
+            {{/each}} -->
+            <td class="col-lg-2"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' department.id bubbles=false}}>Delete</button></td>
+          </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isAdvisor}}
+          {{#each model as |advisor|}}
+          <tr {{action 'editAdvisor' advisor.id}} class="highlight-hover">
+            <!-- <td class="col-lg-2">{{advisor.id}}</td> -->
+            <td class="col-lg-4">{{advisor.advisor_name}}</td>
+            <td class="col-lg-4">{{advisor.advisor_email}}</td>
+            <td class="col-lg-2">{{advisor.department.dept_name}}</td>
+            <!-- {{#each advisor.students as |student|}}
+              <td class="col-lg-2">{{student.student_name}}</td>
+            {{/each}} -->
+            <td class="col-lg-2"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' advisor.id bubbles=false}}>Delete</button></td>
+          </tr>
+          {{/each}}
+        {{/if}}
+        {{#if isUser}}
+          {{#each model as |user|}}
+          <tr {{action 'editUser' user.id}} class="highlight-hover">
+            <!-- <td class="col-lg-2">{{user.id}}</td> -->
+            <td class="col-lg-4">{{user.user_name}}</td>
+            <td class="col-lg-4">{{user.user_email}}</td>
+            <td class="col-lg-4">{{user.department.dept_name}}</td>
+            <td class="col-lg-2"><button type="button" name="button" class="delete-btn" {{action 'confirmDelete' user.id bubbles=false}}>Delete</button></td>
+          </tr>
+          {{/each}}
+        {{/if}}
+        <!--TODO add booksc/o  -->
+      </tbody>
+    </table>
+  <!-- </div> -->
+</div>
+
+{{yield}}

@@ -1,0 +1,7 @@
+{
+  "name": "hsm",
+  "dependencies": {
+    "roboto-fontface": "^0.7.0",
+    "moment": "^2.18.1"
+  }
+}

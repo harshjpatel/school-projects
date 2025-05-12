@@ -1,0 +1,9 @@
+<div class="application">
+  <!-- TODO uncomment these 3 lines for prod -->
+  {{#if showMenu}}
+    {{menu-bar logOut="logOutClient" menuClicked="menuClicked"}}
+  {{/if}}
+  <!-- {{menu-bar logOut="logOutClient" menuClicked="menuClicked"}} -->
+  {{outlet}}
+
+</div>

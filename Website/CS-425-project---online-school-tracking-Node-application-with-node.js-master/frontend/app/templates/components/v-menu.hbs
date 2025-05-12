@@ -1,0 +1,23 @@
+<div class="sidebar">
+  <div class="shadow">
+    <ul class="list-unstyled nav side-list">
+      <li id="overview" aria-label="Overview">Overview</li>
+      {{#if showAdminMenu}}
+      <li id="users" aria-label="User">Users</li>
+      {{/if}}
+      <li id="books" aria-label="Book">Books</li>
+      <li id="booksco" aria-label="BooksCO">Books C/O</li>
+      <li id="students" aria-label="Student">Students</li>
+      <li id="teachers" aria-label="Teacher">Teachers</li>
+      <li id="advisors" aria-label="Advisor">Advisors</li>
+      <li id="departments" aria-label="Department">Departments</li>
+      <li id="classes" aria-label="Class">Classes</li>
+      <li id="parents" aria-label="Parent">Parents</li>
+      {{#if showAdminMenu}}
+      <li id="admins" aria-label="Admin">Admins</li>
+      {{/if}}
+    </ul>
+</div>
+</div>
+
+{{yield}}

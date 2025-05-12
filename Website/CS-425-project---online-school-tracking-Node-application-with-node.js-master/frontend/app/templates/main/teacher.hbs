@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <button type="button" name="button" class="add add-position" {{action 'addTeacher'}}>Add Teacher</button>
+  <div class="confirm-delete color-white">
+    <span class="ask">Are you sure you wish to delete this teacher?</span>
+    <br>
+    <div class="center">
+      <button type="button" name="button" {{action 'deleteModel' param=id}} class="btn-yes">Yes</button>
+      <button type="button" name="button" {{action 'cancelDeleteModel'}} class="btn-no">No</button>
+    </div>
+  </div>
+  <div class="notification-delete">
+    <span>{{inline-svg "checkmark.svg" class='checkmark'}} Teacher successfully deleted! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cancel-notification">x</span></span>
+  </div>
+  {{general-table model=model editTeacher='editTeacher' column1="Name" column2="Email" column3="Class" column4="Department" confirmDelete='confirmDelete' param=id isTeacher=isTeacher }}
+</div>
+{{outlet}}

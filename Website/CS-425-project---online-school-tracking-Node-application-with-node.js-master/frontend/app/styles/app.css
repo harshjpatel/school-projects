@@ -1,0 +1,96 @@
+@import 'login.css';
+@import 'main.css';
+
+.application {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'roboto';
+  overflow-y: auto;
+}
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+  background-color: #EBEBEB;
+}
+input[type="text"]:focus,
+input[type="text"].focus {
+  border-bottom: solid 2px #969696;
+}
+.MA {
+  vertical-align: middle !important;
+}
+.block {
+  display: block;
+}
+.hamburger {
+  width:25px;
+  margin-top:20px;
+  margin-left:45px;
+  fill:#8393a7;
+  /*  fill:#2AD267;*/
+}
+.hamburger:hover{
+  cursor:pointer;
+  /*fill:#DD853E;*/
+}
+.power {
+  width:25px;
+  margin-top:20px;
+  margin-right:60px;
+  fill:#8393a7;
+}
+.power:hover {
+  cursor: pointer;
+  fill:#D2335B;
+}
+.power,.hamburger {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+.sidebar {
+  background-color: white;
+  width: 150px;
+  position: absolute;
+  float: left;
+  height:auto;
+  overflow-y: auto;
+  overflow-x:auto;
+  z-index: 100;
+}
+.side-list {
+  text-align: center;
+  font-size: 15px;
+}
+.side-list li {
+    padding:20px 0px 20px 0px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color:#EEEEEE;
+}
+.side-list li:hover, .highlight-hover:hover {
+  background-color:#EEEEEE;
+  cursor: pointer;
+}
+.highlight {
+  background-color:#EEEEEE;
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one      */
+
+  display: flex;
+  align-items: center;
+}
+.color-white {
+  background-color: white;
+}
+.center {
+  text-align: center;
+}

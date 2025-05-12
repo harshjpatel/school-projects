@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">StockWatch</string>
+    <string name="add">Add</string>
+    <string name="update">Last Updated:</string>
+    <string name="NameApp">StockWatch</string>
+    <string name="NamePerson">©2017, HARSH PATEL</string>
+    <string name="version1">Version 1.0</string>
+    <string name="notes">Enter Notes</string>
+    <string name="file_name">notepad_assignment3.json</string>
+    <string name="encoding">UTF-8</string>
+    <string name="no_file">No Notes File Present</string>
+    <string name="saved">Notepad Saved!</string>
+    <string name="Title">"Write Title..."</string>
+    <string name="Description">"Write Description..."</string>
+</resources>

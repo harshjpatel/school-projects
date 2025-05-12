@@ -1,0 +1,484 @@
+<div class="container {{if isStudent 'b-container-fluid' 'a-container-fluid'}} {{if isBook 'c-container-fluid'}} color-white">
+  <table class="table table-borderless">
+    <tbody>
+      <!-- ============ -->
+      <!-- ROW1 OF EDIT -->
+      <!-- ============ -->
+      {{#if row1}}
+      <tr>
+        <td class='MA'><strong>{{row1}}</strong></td>
+        {{#if isAdmin}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.admin_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isBook}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.book_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value=bookTitle placeholder=row1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isStudent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.student_ID}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isParent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=model.mother_name valueBinding=r1}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isTeacher}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.teacher_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isClass}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.class_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isDepartment}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.dept_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isAdvisor}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.advisor_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isUser}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.user_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW2 OF EDIT -->
+      <!-- ============ -->
+      {{#if row2}}
+      <tr>
+        <td class='MA'><strong>{{row2}}</strong></td>
+        {{#if isAdmin}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.admin_email}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row2 valueBinding=r2}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isBook}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.isbn}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value=bookISBN placeholder=row2}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isStudent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.student_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row2 valueBinding=r2}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isParent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=model.father_name valueBinding=r1}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isTeacher}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.teacher_email}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row2 valueBinding=r2}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isClass}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.department.dept_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row2 valueBinding=r2}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isAdvisor}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.advisor_email}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row2 valueBinding=r2}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isUser}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.user_email}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row2 valueBinding=r2}}</td>
+          {{/if}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW3 OF EDIT -->
+      <!-- ============ -->
+      {{#if row3}}
+      <tr>
+        {{#if isTeacher}}
+          <td><strong>{{row3}}</strong></td>
+        {{else}}
+          <td class='MA'><strong>{{row3}}</strong></td>
+        {{/if}}
+        {{#if isBook}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.author}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value=bookAuthors placeholder=row3}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isStudent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.student_email}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row3 valueBinding=r3}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isParent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=model.parent_phone valueBinding=r1}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isTeacher}}
+
+          {{#each classArray as |class index|}}
+            <td class="cell-tab block m-left ">
+              {{input type="text" name="" value=class change=(action 'updateClassRow' index) placeholder=row3}}
+              <button type="button" name="button" class="delete-btn" {{action 'deleteClassRow' index}}>Remove</button>
+            </td>
+          {{/each}}
+
+        {{/if}}
+        {{#if isClass}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.teacher.teacher_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row3 valueBinding=r3}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isDepartment}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=model.dept_name valueBinding=r1}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isAdvisor}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.department.dept_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row3 valueBinding=r3}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isUser}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.department.dept_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row3 valueBinding=r3}}</td>
+          {{/if}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW4 OF EDIT -->
+      <!-- ============ -->
+      {{#if row4}}
+      <tr>
+        {{#if isClass}}
+          <td><strong>Student</strong></td>
+        {{else if isTeacher}}
+
+        {{else}}
+          <td class='MA'><strong>{{row4}}</strong></td>
+        {{/if}}
+        {{#if isTeacher}}
+           <td><button type="button" name="button" class="add" {{action 'addClassRow'}}>Add Class</button></td>
+        {{/if}}
+          {{#if isBook}}
+            {{#if model.id}} <!-- if model id is not null-->
+              <td class="cell-tab">{{input type="text" name="" value=model.price}}</td>
+            {{else}} <!--leave placeholder normally-->
+              <td class="cell-tab">{{input type="text" name="" value="" placeholder=row4 valueBinding=r4}}</td>
+            {{/if}}
+          {{/if}}
+          {{#if isStudent}}
+            {{#if model.id}} <!-- if model id is not null-->
+              <td class="cell-tab">{{input type="text" name="" value=model.student_phone}}</td>
+            {{else}} <!--leave placeholder normally-->
+              <td class="cell-tab">{{input type="text" name="" value="" placeholder=row4 valueBinding=r4}}</td>
+            {{/if}}
+          {{/if}}
+          {{#if isParent}}
+            {{#if model.id}} <!-- if model id is not null-->
+              <td class="cell-tab">{{input type="text" name="" value="" placeholder=model.parent_phone valueBinding=r1}}</td>
+            {{else}} <!--leave placeholder normally-->
+              <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+            {{/if}}
+          {{/if}}
+          {{#if isClass}}
+
+          {{#each studentArray as |student index|}}
+            <td class="cell-tab block m-left ">
+              {{input type="text" name="" value=student change=(action 'updateStudentRow' index) placeholder=row4}}
+              <button type="button" name="button" class="delete-btn" {{action 'deleteStudentRow' index}}>Remove</button>
+            </td>
+          {{/each}}
+
+          {{/if}}
+          {{#if isDepartment}}
+            {{#if model.id}} <!-- if model id is not null-->
+              <td class="cell-tab">{{input type="text" name="" value="" placeholder=model.dept_name valueBinding=r1}}</td>
+            {{else}} <!--leave placeholder normally-->
+              <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+            {{/if}}
+          {{/if}}
+        </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW5 OF EDIT -->
+      <!-- ============ -->
+      {{#if row5}}
+      <tr>
+        {{#if isClass}}
+          <td><button type="button" name="button" class="add" {{action 'addStudentRow'}}>Add Student</button></td>
+          {{else}}
+          <td class='MA'><strong>{{row5}}</strong></td>
+        {{/if}}
+        {{#if isAdmin}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=model.admin_name valueBinding=r1}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isStudent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.student_address}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row5 valueBinding=r5}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isParent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=model.mother_name valueBinding=r1}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isTeacher}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.department.dept_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row5 valueBinding=r5}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isDepartment}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=model.dept_name valueBinding=r1}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row1 valueBinding=r1}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isBook}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.checkout_date}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row5 valueBinding=r5}}</td>
+          {{/if}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW6 OF EDIT -->
+      <!-- ============ -->
+      {{#if row6}}
+      <tr>
+        <td><strong>{{row6}}</strong></td>
+        {{#if isStudent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.parent.mother_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row6 valueBinding=r6}}</td>
+          {{/if}}
+        {{/if}}
+        {{#if isBook}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.due_date}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row6 valueBinding=r6}}</td>
+          {{/if}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW7 OF EDIT -->
+      <!-- ============ -->
+      {{#if row7}}
+      <tr>
+        <td><strong>{{row7}}</strong></td>
+        {{#if isStudent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.parent.father_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row7 valueBinding=r7}}</td>
+          {{/if}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW8 OF EDIT -->
+      <!-- ============ -->
+      {{#if row8}}
+      <tr>
+        <td><strong>{{row8}}</strong></td>
+        {{#if isStudent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.advisor.advisor_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row8 valueBinding=r8}}</td>
+          {{/if}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW9 OF EDIT -->
+      <!-- ============ -->
+      {{#if row9}}
+      <tr>
+        <td><strong>{{row9}}</strong></td>
+        {{#if isStudent}}
+          {{#if model.id}} <!-- if model id is not null-->
+            <td class="cell-tab">{{input type="text" name="" value=model.department.dept_name}}</td>
+          {{else}} <!--leave placeholder normally-->
+            <td class="cell-tab">{{input type="text" name="" value="" placeholder=row9 valueBinding=r9}}</td>
+          {{/if}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW10 OF EDIT -->
+      <!-- ============ -->
+      {{#if row10}}
+      <tr>
+        {{#if isStudent}}
+          <td><strong>{{row10}}</strong></td>
+        {{else}}
+          <td class='MA'><strong>{{row10}}</strong></td>
+        {{/if}}
+        {{#if isStudent}}
+        {{#each bookArray as |book index|}}
+          <td class="cell-tab block m-left ">
+            {{input type="text" name="" value=book change=(action 'updateBookRow' index) placeholder=row10}}
+            <button type="button" name="button" class="delete-btn" {{action 'deleteBookRow' index}}>Remove</button>
+          </td>
+        {{/each}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW11 OF EDIT -->
+      <!-- ============ -->
+      {{#if row11}}
+      <tr>
+        {{#if isStudent}}
+           <td><button type="button" name="button" class="add" {{action 'addBookRow'}}>Add Book</button></td>
+        {{else}}
+          <td class='MA'><strong>{{row11}}</strong></td>
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW11 OF EDIT -->
+      <!-- ============ -->
+      {{#if row12}}
+      <tr>
+        {{#if isStudent}}
+          <td><strong>{{row12}}</strong></td>
+        {{else}}
+          <td class='MA'><strong>{{row11}}</strong></td>
+        {{/if}}
+        {{#if isStudent}}
+        {{#each classArray as |class index|}}
+          <td class="cell-tab block m-left ">
+            {{input type="text" name="" value=class change=(action 'updateClassRow' index) placeholder=row12}}
+            <button type="button" name="button" class="delete-btn" {{action 'deleteBookRow' index}}>Remove</button>
+          </td>
+        {{/each}}
+        {{/if}}
+      </tr>
+      {{/if}}
+      <!-- ============ -->
+      <!-- ROW13 OF EDIT -->
+      <!-- ============ -->
+      {{#if row13}}
+      <tr>
+        {{#if isStudent}}
+           <td><button type="button" name="button" class="add" {{action 'addClassRow'}}>Add Class</button></td>
+        {{else}}
+          <td class='MA'><strong>{{row13}}</strong></td>
+          {{/if}}
+      </tr>
+      {{/if}}
+    </tbody>
+  </table>
+  {{#if isBook}}
+    <button type="button" name="button" {{action 'findBook'}} class='check'>Search Book</button>
+  {{/if}}
+  <button type="button" name="button" {{action 'save'}} class='add right'>Save</button>
+</div>
+
+  {{#if isBook}}
+  <div class="container t-container-fluid book-container color-white">
+    <table class="table">
+        <tr>
+          <th class="col-lg-4">Title</th>
+          <th class="col-lg-4">ISBN</th>
+          <th class="col-lg-4">Authors</th>
+        </tr>
+        <tbody>
+          {{#if isBook}}
+            {{#each queryData as |book|}}
+              <tr class="highlight-hover" {{action 'populateFields' book.title book.isbn book.authors}}>
+                <td class="col-lg-4">{{book.title}}</td>
+                <td class="col-lg-4">{{book.isbn}}</td>
+                <td class="col-lg-4">
+                  {{#each book.authors as |author|}}
+                    {{author}}
+                  {{/each}}
+                </td>
+              </tr>
+            {{/each}}
+          {{/if}}
+        </tbody>
+      </table>
+    </div>
+  {{/if}}
+{{yield}}

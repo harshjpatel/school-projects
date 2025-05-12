@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Itunes M.Jackson Songs</string>
+    <string name="NameApp">King of Pop Songs</string>
+    <string name="NamePerson">M Jackson</string>
+    <string name="version1">Version 1</string>
+    <string name="about">About</string>
+    <string name="price">Price</string>
+    <string name="genre">Genre</string>
+    <string name="Music_Preview">Music Preview</string>
+    <string name="button">Buy It!</string>
+</resources>

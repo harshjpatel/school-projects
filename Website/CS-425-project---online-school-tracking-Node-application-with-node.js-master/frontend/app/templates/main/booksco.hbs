@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <button type="button" name="button" class="add add-position" {{action 'addBook'}}>Add Book</button>
+  <div class="confirm-delete color-white">
+    <span class="ask">Are you sure you wish to delete this book?</span>
+    <br>
+    <div class="center">
+      <button type="button" name="button" {{action 'deleteModel' param=id}} class="btn-yes">Yes</button>
+      <button type="button" name="button" {{action 'cancelDeleteModel'}} class="btn-no">No</button>
+    </div>
+  </div>
+  <div class="notification-delete">
+    <span>{{inline-svg "checkmark.svg" class='checkmark'}} Book successfully deleted! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cancel-notification">x</span></span>
+  </div>
+  {{general-table model=model column1="Book Title" column2="ISBN" column3="Author" column4="Price" column5="Available" column6="Date C/O" column7="Due Date" confirmDelete='confirmDelete'editBook="editBook" param=id isBookCO=isBookCO }}
+</div>
+{{outlet}}

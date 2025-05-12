@@ -1,0 +1,9 @@
+<div class="main-main">
+  {{#if showVMenuUser}}
+    {{v-menu goToRoute="goToRoute" param=route}}
+  {{/if}}
+  {{#if showVMenuAdmin}}
+    {{v-menu goToRoute="goToRoute" param=route showAdminMenu=true}}
+  {{/if}}
+  {{outlet}}
+</div>
